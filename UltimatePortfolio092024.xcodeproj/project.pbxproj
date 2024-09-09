@@ -16,6 +16,8 @@
 		FE98C1642C892953003271FE /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE98C1632C892953003271FE /* SidebarView.swift */; };
 		FE98C1662C892966003271FE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE98C1652C892966003271FE /* DetailView.swift */; };
 		FE98C1682C892B84003271FE /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE98C1672C892B84003271FE /* Filter.swift */; };
+		FE99BF252C8E88C500630B3C /* Issue-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99BF242C8E88C500630B3C /* Issue-CoreDataHelpers.swift */; };
+		FE99BF272C8E8A2000630B3C /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99BF262C8E8A2000630B3C /* Tag-CoreDataHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		FE98C1632C892953003271FE /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		FE98C1652C892966003271FE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		FE98C1672C892B84003271FE /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		FE99BF242C8E88C500630B3C /* Issue-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		FE99BF262C8E8A2000630B3C /* Tag-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +70,12 @@
 				FE98C1622C88CB79003271FE /* Info.plist */,
 				FE98C14E2C87A076003271FE /* UltimatePortfolio092024App.swift */,
 				FE98C1672C892B84003271FE /* Filter.swift */,
-				FE98C1502C87A076003271FE /* ContentView.swift */,
 				FE98C15D2C88BFAD003271FE /* Main.xcdatamodeld */,
+				FE99BF242C8E88C500630B3C /* Issue-CoreDataHelpers.swift */,
+				FE99BF262C8E8A2000630B3C /* Tag-CoreDataHelpers.swift */,
 				FE98C1602C88C2E6003271FE /* DataController.swift */,
 				FE98C1632C892953003271FE /* SidebarView.swift */,
+				FE98C1502C87A076003271FE /* ContentView.swift */,
 				FE98C1652C892966003271FE /* DetailView.swift */,
 				FE98C1522C87A077003271FE /* Assets.xcassets */,
 				FE98C1542C87A077003271FE /* UltimatePortfolio092024.entitlements */,
@@ -157,7 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE98C1682C892B84003271FE /* Filter.swift in Sources */,
+				FE99BF272C8E8A2000630B3C /* Tag-CoreDataHelpers.swift in Sources */,
 				FE98C15F2C88BFAD003271FE /* Main.xcdatamodeld in Sources */,
+				FE99BF252C8E88C500630B3C /* Issue-CoreDataHelpers.swift in Sources */,
 				FE98C1662C892966003271FE /* DetailView.swift in Sources */,
 				FE98C1612C88C2E6003271FE /* DataController.swift in Sources */,
 				FE98C1642C892953003271FE /* SidebarView.swift in Sources */,
