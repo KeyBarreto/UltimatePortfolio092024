@@ -12,6 +12,8 @@ struct IssueRow: View {
     @ObservedObject var issue: Issue
     
     var body: some View {
+        
+        
         NavigationLink(value: issue) {
             HStack {
                 Image(systemName: "exclamationmark.circle")

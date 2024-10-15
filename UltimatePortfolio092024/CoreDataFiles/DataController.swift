@@ -40,9 +40,11 @@ class DataController: ObservableObject {
     }()
     
     var suggestedFilterTokens: [Tag] {
-        guard filterText.starts(with: "#") else { return [] }
+//        guard filterText.starts(with: "#") else { return [] }
         
-        let trimmedFilterText = String(filterText.dropFirst()).trimmingCharacters(in: .whitespaces)
+        // I also removed the 'dropFirst' method since we're not using the # anymore
+        let trimmedFilterText = String(filterText.trimmingCharacters(in: .whitespaces))
+        print(trimmedFilterText)
         let request = Tag.fetchRequest()
         
         if trimmedFilterText.isEmpty == false {
@@ -53,6 +55,7 @@ class DataController: ObservableObject {
     }
     
     init(inMemory: Bool = false) {
+        // inMemory' was created to preview data, when it's set to true, we’ll create our data entirely in memory rather than on disk
         container = NSPersistentCloudKitContainer(name: "Main")
         
         if inMemory {
@@ -178,6 +181,7 @@ class DataController: ObservableObject {
         
         if filterTokens.isEmpty == false {
             for filterToken in filterTokens {
+                print("Adding \(filterToken.tagName) to FilterTokens array")
                 let tokenPredicate = NSPredicate(format: "tags CONTAINS %@", filterToken)
                 predicates.append(tokenPredicate)
             }
@@ -206,5 +210,28 @@ class DataController: ObservableObject {
         let allIssues = (try? container.viewContext.fetch(request)) ?? []
         
         return allIssues.sorted()
+    }
+    
+    func newIssue() {
+        let issue = Issue(context: container.viewContext)
+        issue.title = "New Issue"
+        issue.creationDate = .now
+        issue.priority = 1
+        
+        if let tag = selectedFilter?.tag {
+            issue.addToTags(tag)
+        }
+        
+        save()
+        
+        selectedIssue = issue
+    }
+    
+    func newTag() {
+        let tag = Tag(context: container.viewContext)
+        tag.id = UUID()
+        tag.name = "New Tag"
+        
+        save()
     }
 }
