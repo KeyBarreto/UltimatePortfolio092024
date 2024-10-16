@@ -23,7 +23,6 @@
 		FE99BF272C8E8A2000630B3C /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99BF262C8E8A2000630B3C /* Tag-CoreDataHelpers.swift */; };
 		FEA23E1F2CBF115500CA288F /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA23E1E2CBF115500CA288F /* Bundle-Decodable.swift */; };
 		FEA23E222CBF171900CA288F /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = FEA23E202CBF171900CA288F /* Awards.json */; };
-		FEA23E232CBF171900CA288F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA23E212CBF171900CA288F /* Colors.xcassets */; };
 		FEA23E252CBF17ED00CA288F /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA23E242CBF17ED00CA288F /* Award.swift */; };
 		FEA23E272CBF1AA000CA288F /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA23E262CBF1AA000CA288F /* AwardsView.swift */; };
 /* End PBXBuildFile section */
@@ -48,7 +47,6 @@
 		FE99BF262C8E8A2000630B3C /* Tag-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		FEA23E1E2CBF115500CA288F /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		FEA23E202CBF171900CA288F /* Awards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
-		FEA23E212CBF171900CA288F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FEA23E242CBF17ED00CA288F /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		FEA23E262CBF1AA000CA288F /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +108,6 @@
 				FE99BF2A2C8E8F1200630B3C /* Views */,
 				FE98C1522C87A077003271FE /* Assets.xcassets */,
 				FEA23E202CBF171900CA288F /* Awards.json */,
-				FEA23E212CBF171900CA288F /* Colors.xcassets */,
 				FE98C1542C87A077003271FE /* UltimatePortfolio092024.entitlements */,
 				FE98C1552C87A077003271FE /* Preview Content */,
 			);
@@ -200,7 +197,6 @@
 			files = (
 				FE98C1572C87A077003271FE /* Preview Assets.xcassets in Resources */,
 				FEA23E222CBF171900CA288F /* Awards.json in Resources */,
-				FEA23E232CBF171900CA288F /* Colors.xcassets in Resources */,
 				FE98C1532C87A077003271FE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
