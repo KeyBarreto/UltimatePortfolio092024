@@ -33,7 +33,7 @@ struct IssueRow: View {
                 Spacer()
                 
                 VStack(alignment: .trailing) {
-                    Text(issue.issueCreationDate.formatted(date: .numeric, time: .omitted))
+                    Text(issue.issueFormattedCreationDate)
                         .accessibilityLabel(issue.issueCreationDate.formatted(date: .abbreviated, time: .omitted))
                         .font(.subheadline)
                     

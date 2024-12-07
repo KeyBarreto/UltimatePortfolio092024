@@ -10,6 +10,9 @@
 		FE381A982C9611070057B0CA /* IssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE381A972C9611070057B0CA /* IssueView.swift */; };
 		FE381A9A2C9611150057B0CA /* NoIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE381A992C9611150057B0CA /* NoIssueView.swift */; };
 		FE64EF672C8FA46200F0C2AA /* IssueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE64EF662C8FA46200F0C2AA /* IssueRow.swift */; };
+		FE9045772D04C8F200D905F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE9045752D04C8F200D905F8 /* Localizable.strings */; };
+		FE90457A2D04CDA700D905F8 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = FE9045782D04CDA700D905F8 /* Localizable.stringsdict */; };
+		FE90457F2D04DC7A00D905F8 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = FE90457E2D04DC7A00D905F8 /* Awards.json */; };
 		FE98C14F2C87A076003271FE /* UltimatePortfolio092024App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE98C14E2C87A076003271FE /* UltimatePortfolio092024App.swift */; };
 		FE98C1512C87A076003271FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE98C1502C87A076003271FE /* ContentView.swift */; };
 		FE98C1532C87A077003271FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE98C1522C87A077003271FE /* Assets.xcassets */; };
@@ -23,7 +26,6 @@
 		FE99BF252C8E88C500630B3C /* Issue-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99BF242C8E88C500630B3C /* Issue-CoreDataHelpers.swift */; };
 		FE99BF272C8E8A2000630B3C /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99BF262C8E8A2000630B3C /* Tag-CoreDataHelpers.swift */; };
 		FEA23E1F2CBF115500CA288F /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA23E1E2CBF115500CA288F /* Bundle-Decodable.swift */; };
-		FEA23E222CBF171900CA288F /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = FEA23E202CBF171900CA288F /* Awards.json */; };
 		FEA23E252CBF17ED00CA288F /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA23E242CBF17ED00CA288F /* Award.swift */; };
 		FEA23E272CBF1AA000CA288F /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA23E262CBF1AA000CA288F /* AwardsView.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +34,12 @@
 		FE381A972C9611070057B0CA /* IssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueView.swift; sourceTree = "<group>"; };
 		FE381A992C9611150057B0CA /* NoIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoIssueView.swift; sourceTree = "<group>"; };
 		FE64EF662C8FA46200F0C2AA /* IssueRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRow.swift; sourceTree = "<group>"; };
+		FE9045762D04C8F200D905F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FE9045792D04CDA700D905F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		FE90457B2D04D92C00D905F8 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FE90457C2D04D92C00D905F8 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = hu; path = hu.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		FE90457D2D04DC7A00D905F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Awards.json; sourceTree = "<group>"; };
+		FE9045802D04DC7D00D905F8 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = hu; path = hu.lproj/Awards.json; sourceTree = "<group>"; };
 		FE98C14B2C87A076003271FE /* UltimatePortfolio092024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio092024.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE98C14E2C87A076003271FE /* UltimatePortfolio092024App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolio092024App.swift; sourceTree = "<group>"; };
 		FE98C1502C87A076003271FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,7 +56,6 @@
 		FE99BF242C8E88C500630B3C /* Issue-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		FE99BF262C8E8A2000630B3C /* Tag-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		FEA23E1E2CBF115500CA288F /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
-		FEA23E202CBF171900CA288F /* Awards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		FEA23E242CBF17ED00CA288F /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		FEA23E262CBF1AA000CA288F /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,7 +118,7 @@
 				FE99BF2A2C8E8F1200630B3C /* Views */,
 				FE98C1522C87A077003271FE /* Assets.xcassets */,
 				FE99A1022CFA714E0036F754 /* Colors.xcassets */,
-				FEA23E202CBF171900CA288F /* Awards.json */,
+				FE90457E2D04DC7A00D905F8 /* Awards.json */,
 				FE98C1542C87A077003271FE /* UltimatePortfolio092024.entitlements */,
 				FE98C1552C87A077003271FE /* Preview Content */,
 			);
@@ -136,6 +143,8 @@
 				FE381A992C9611150057B0CA /* NoIssueView.swift */,
 				FE381A972C9611070057B0CA /* IssueView.swift */,
 				FEA23E262CBF1AA000CA288F /* AwardsView.swift */,
+				FE9045752D04C8F200D905F8 /* Localizable.strings */,
+				FE9045782D04CDA700D905F8 /* Localizable.stringsdict */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,7 +177,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					FE98C14A2C87A076003271FE = {
 						CreatedOnToolsVersion = 15.4;
@@ -182,6 +191,7 @@
 			knownRegions = (
 				en,
 				Base,
+				hu,
 			);
 			mainGroup = FE98C1422C87A076003271FE;
 			productRefGroup = FE98C14C2C87A076003271FE /* Products */;
@@ -198,10 +208,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE9045772D04C8F200D905F8 /* Localizable.strings in Resources */,
 				FE98C1572C87A077003271FE /* Preview Assets.xcassets in Resources */,
 				FE99A1032CFA714E0036F754 /* Colors.xcassets in Resources */,
-				FEA23E222CBF171900CA288F /* Awards.json in Resources */,
+				FE90457F2D04DC7A00D905F8 /* Awards.json in Resources */,
 				FE98C1532C87A077003271FE /* Assets.xcassets in Resources */,
+				FE90457A2D04CDA700D905F8 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,12 +244,43 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		FE9045752D04C8F200D905F8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE9045762D04C8F200D905F8 /* en */,
+				FE90457B2D04D92C00D905F8 /* hu */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		FE9045782D04CDA700D905F8 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE9045792D04CDA700D905F8 /* en */,
+				FE90457C2D04D92C00D905F8 /* hu */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+		FE90457E2D04DC7A00D905F8 /* Awards.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE90457D2D04DC7A00D905F8 /* en */,
+				FE9045802D04DC7D00D905F8 /* hu */,
+			);
+			name = Awards.json;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		FE98C1582C87A077003271FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -267,6 +310,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -299,6 +343,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -328,6 +373,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -355,6 +401,7 @@
 				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio092024/UltimatePortfolio092024.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio092024/Preview Content\"";
 				DEVELOPMENT_TEAM = Z94SH58377;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -394,6 +441,7 @@
 				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio092024/UltimatePortfolio092024.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio092024/Preview Content\"";
 				DEVELOPMENT_TEAM = Z94SH58377;
 				ENABLE_HARDENED_RUNTIME = YES;
