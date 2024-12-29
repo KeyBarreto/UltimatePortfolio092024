@@ -149,9 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				FE98C1632C892953003271FE /* SidebarView.swift */,
+				FE4B93062D0DFA2B005F6787 /* SidebarViewToolbar.swift */,
 				FE4B93102D0E02AB005F6787 /* UserFilterRow.swift */,
 				FE4B930E2D0E0224005F6787 /* SmartFilterRow.swift */,
-				FE4B93062D0DFA2B005F6787 /* SidebarViewToolbar.swift */,
 				FE98C1502C87A076003271FE /* ContentView.swift */,
 				FE4B930A2D0DFE17005F6787 /* ContentViewToolbar.swift */,
 				FE64EF662C8FA46200F0C2AA /* IssueRow.swift */,
@@ -177,6 +177,7 @@
 				FE98C1472C87A076003271FE /* Sources */,
 				FE98C1482C87A076003271FE /* Frameworks */,
 				FE98C1492C87A076003271FE /* Resources */,
+				FE48776D2D21D9EF008C4B45 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -236,6 +237,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FE48776D2D21D9EF008C4B45 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE98C1472C87A076003271FE /* Sources */ = {
@@ -430,6 +453,7 @@
 				DEVELOPMENT_TEAM = Z94SH58377;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UltimatePortfolio092024/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -470,6 +494,7 @@
 				DEVELOPMENT_TEAM = Z94SH58377;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UltimatePortfolio092024/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

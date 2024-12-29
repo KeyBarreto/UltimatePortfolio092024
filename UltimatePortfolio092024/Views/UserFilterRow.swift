@@ -19,7 +19,7 @@ struct UserFilterRow: View {
                 .contextMenu {
                     Button {
                         rename(filter)
-                    } label : {
+                    } label: {
                         Label("Rename", systemImage: "pencil")
                     }
                     

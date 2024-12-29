@@ -13,7 +13,6 @@ struct IssueRow: View {
     
     var body: some View {
         
-        
         NavigationLink(value: issue) {
             HStack {
                 Image(systemName: "exclamationmark.circle")
@@ -44,7 +43,6 @@ struct IssueRow: View {
                 }
                 .foregroundStyle(.secondary)
             }
-        
         }
         .accessibilityHint(issue.priority == 2 ? "High Priority" : "")
     }

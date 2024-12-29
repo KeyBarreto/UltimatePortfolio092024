@@ -55,24 +55,33 @@ class DataController: ObservableObject {
     }
     
     init(inMemory: Bool = false) {
-        // inMemory' was created to preview data, when it's set to true, we’ll create our data entirely in memory rather than on disk
+        // inMemory' -> to preview data, when true, data is created entirely in memory, not disk
         container = NSPersistentCloudKitContainer(name: "Main")
         
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(filePath: "/dev/null")
         }
         
-        //Automatically apply to our view context any changes that happen to the underlying persistent store, so the two stay in sync
+        // Apply any changes to our view context that happen to the underlying persistent store, so the two stay in sync
         container.viewContext.automaticallyMergesChangesFromParent = true
         
-        //Local changes are more important that remote changes
+        // Local changes are more important that remote changes
         container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
         
-        //Watching for external changes, so we can update our UI
-        container.persistentStoreDescriptions.first?.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
-        NotificationCenter.default.addObserver(forName: .NSPersistentStoreRemoteChange, object: container.persistentStoreCoordinator, queue: .main, using: remoteStoreChanged)
+        // Watching for external changes, so we can update our UI
+        container.persistentStoreDescriptions.first?.setOption(
+            true as NSNumber,
+            forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey
+        )
         
-        container.loadPersistentStores { storeDescription, error in
+        NotificationCenter.default.addObserver(
+            forName: .NSPersistentStoreRemoteChange,
+            object: container.persistentStoreCoordinator,
+            queue: .main,
+            using: remoteStoreChanged
+        )
+        
+        container.loadPersistentStores { _, error in
             if let error {
                 fatalError("Fatal error loading store: \(error.localizedDescription)")
             }
@@ -80,7 +89,7 @@ class DataController: ObservableObject {
         
     }
     
-    //Method created to notify when changes will happen
+    // Method created to notify when changes will happen
     func remoteStoreChanged(_ notification: Notification) {
         objectWillChange.send()
     }
@@ -88,14 +97,14 @@ class DataController: ObservableObject {
     func createSampleData() {
         let viewContext = container.viewContext
         
-        for i in 1...5 {
+        for tagCounter in 1...5 {
             let tag = Tag(context: viewContext)
             tag.id = UUID()
-            tag.name = "Tag \(i)"
+            tag.name = "Tag \(tagCounter)"
             
-            for j in 1...10 {
+            for issueCounter in 1...10 {
                 let issue = Issue(context: viewContext)
-                issue.title = "Issue \(i)-\(j)"
+                issue.title = "Issue \(tagCounter)-\(issueCounter)"
                 issue.content = "Description goes here"
                 issue.creationDate = .now
                 issue.completed = Bool.random()
@@ -177,7 +186,9 @@ class DataController: ObservableObject {
         if trimmedFilterText.isEmpty == false {
             let titlePredicate = NSPredicate(format: "title CONTAINS[c] %@", trimmedFilterText)
             let contentPredicate = NSPredicate(format: "content CONTAINS[c] %@", trimmedFilterText)
-            let combinedPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: [titlePredicate, contentPredicate])
+            let combinedPredicate = NSCompoundPredicate(
+                orPredicateWithSubpredicates: [titlePredicate, contentPredicate]
+            )
             predicates.append(combinedPredicate)
         }
         
@@ -261,7 +272,7 @@ class DataController: ObservableObject {
             return awardCount >= award.value
         default:
             // an unknown award criterion; this should never be allowed
-            //fatalError("Unknown award criterion: \(award.criterion)")
+            // fatalError("Unknown award criterion: \(award.criterion)")
             return false
         }
         

@@ -18,7 +18,7 @@ struct SidebarView: View {
     @State private var tagName = ""
     
     // Moved to ToolbarView
-    //@State private var showingAwards = false
+    // @State private var showingAwards = false
     
     var tagFilters: [Filter] {
         tags.map { tag in
@@ -28,6 +28,7 @@ struct SidebarView: View {
     
     var body: some View {
         List(selection: $dataController.selectedFilter) {
+            
             Section("Smart Filters") {
                 ForEach(smartFilters, content: SmartFilterRow.init)
             }
@@ -46,7 +47,6 @@ struct SidebarView: View {
             Button("Cancel", role: .cancel) { }
             TextField("New name", text: $tagName)
         }
-        
         .navigationTitle("Filters")
     }
     

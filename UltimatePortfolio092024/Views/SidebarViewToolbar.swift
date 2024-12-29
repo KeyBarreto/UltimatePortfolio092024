@@ -18,10 +18,11 @@ struct SidebarViewToolbar: View {
         
         Button {
             showingAwards.toggle()
-        } label : {
+        } label: {
             Label("Show awards", systemImage: "rosette")
         }
         .sheet(isPresented: $showingAwards, content: AwardsView.init)
+        
 #if DEBUG
         Button {
             dataController.deleteAll()
