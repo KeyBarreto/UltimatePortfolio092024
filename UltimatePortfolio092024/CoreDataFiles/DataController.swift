@@ -188,7 +188,6 @@ class DataController: ObservableObject {
         return difference.sorted()
     }
 
-
     /// Runs a fetch request with various predicates that filter the user's issues based
     /// on tag, title and content text, search tokens, priority, and completion status.
     /// - Returns: An array of all matching issues.
