@@ -31,7 +31,7 @@ final class AwardsTests: BaseTestCase {
             var issues = [Issue]()
 
             for _ in 0..<value {
-                let issue = Issue(context: mananedObjectContext)
+                let issue = Issue(context: managedObjectContext)
                 issues.append(issue)
             }
 
@@ -51,7 +51,7 @@ final class AwardsTests: BaseTestCase {
             var issues = [Issue]()
 
             for _ in 0..<value {
-                let issue = Issue(context: mananedObjectContext)
+                let issue = Issue(context: managedObjectContext)
                 issue.completed = true
                 issues.append(issue)
             }

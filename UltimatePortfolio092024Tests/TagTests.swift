@@ -14,10 +14,10 @@ final class TagTests: BaseTestCase {
         let targetCount = 10
 
         for _ in 0..<targetCount {
-            let tag = Tag(context: mananedObjectContext)
+            let tag = Tag(context: managedObjectContext)
 
             for _ in 0..<targetCount {
-                let issue = Issue(context: mananedObjectContext)
+                let issue = Issue(context: managedObjectContext)
                 tag.addToIssues(issue)
             }
         }
@@ -34,7 +34,7 @@ final class TagTests: BaseTestCase {
         dataController.createSampleData()
 
         let request = NSFetchRequest<Tag>(entityName: "Tag")
-        let tags = try mananedObjectContext.fetch(request)
+        let tags = try managedObjectContext.fetch(request)
         dataController.delete(tags[0])
 
         XCTAssertEqual(dataController.count(for: Tag.fetchRequest()), 4,
